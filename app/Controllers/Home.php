@@ -12,4 +12,16 @@ class Home extends BaseController
     {
         return view('profil');
     }
+            public function jurusan()
+    {
+        return view('jurusan');
+    }
+            public function fasilitas()
+    {
+        return view('fasilitas');
+    }
+            public function kontak()
+    {
+        return view('kontak');
+    }
 }
