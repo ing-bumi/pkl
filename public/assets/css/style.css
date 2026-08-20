@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #f5f7fa;
+}
+
+/* Navbar */
+.navbar {
+    background: #17365d;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo span {
+    color: #5b9bd5;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #5b9bd5;
+}
+
+/* Hero */
+.hero,
+.page-header {
+    background: #17365d;
+    color: white;
+    padding: 80px 10%;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.hero p,
+.page-header p {
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.small-title {
+    color: #5b9bd5;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Content */
+.intro,
+.program,
+.profil-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.intro-content,
+.profil-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+h2 {
+    color: #17365d;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.info-box,
+.profil-info,
+.program-card,
+.principal-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.info-box {
+    border-left: 4px solid #5b9bd5;
+}
+
+.info-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-item span {
+    display: block;
+    color: #777;
+    font-size: 13px;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.principal {
+    background: #eef3f8;
+    padding: 60px 10%;
+}
+
+.principal-box {
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact-banner {
+    background: #17365d;
+    color: white;
+    padding: 40px 10%;
+}
+
+footer {
+    background: #0d2238;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    background: #5b9bd5;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* HP */
+@media (max-width: 700px) {
+    .navbar,
+    .intro-content,
+    .profil-content {
+        display: block;
+    }
+
+    .menu {
+        margin-top: 15px;
+    }
+
+    .menu a {
+        margin: 0 8px 0 0;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
